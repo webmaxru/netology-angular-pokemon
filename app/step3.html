@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="PokemonApp">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Шаг 3 / Фреймворк AngularJS / Нетология</title>
+        <script src="../libs/angular-1.5.3/angular.min.js"></script>
+    </head>
+
+    <body ng-controller="PokemonListCtrl">
+
+        <ul>
+            <li ng-repeat="singlePokemon in pokemons">
+                <small>ID #{{singlePokemon.id }}</small>
+                <h1>{{singlePokemon.name }}</h1>
+                <p>Вес: {{singlePokemon.weight}}, рост: {{singlePokemon.height}}</p>
+                <hr />
+            </li>
+        </ul>
+
+        <script src="js/step3/app.js"></script>
+        <script src="js/step3/controllers.js"></script>
+
+    </body>
+
+</html>
